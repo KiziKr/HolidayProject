@@ -53,7 +53,6 @@ bool ANPCBank::OpensTheAccountOf(const FString &PlayerName)
 {	
 	if (!ItemsTables || !InventoryUserWidget)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, "merde");
 		return false;
 	}
 
