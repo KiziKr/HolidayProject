@@ -51,7 +51,6 @@ void ANPCBank::OpeningAnAccount(const FString &PlayerName, float price)
 
 bool ANPCBank::OpensTheAccountOf(const FString &PlayerName)
 {	
-	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, "ok super");
 	if (!ItemsTables || !InventoryUserWidget)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, "merde");
@@ -64,8 +63,6 @@ bool ANPCBank::OpensTheAccountOf(const FString &PlayerName)
 		InventoryUserWidget->AddToViewport();
 		return true;
 	}
-
-	GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, "merde");
 
 	return false;
 }
